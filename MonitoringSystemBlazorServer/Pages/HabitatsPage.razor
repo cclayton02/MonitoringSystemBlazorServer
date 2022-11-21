@@ -1,0 +1,59 @@
+﻿@page "/habitats"
+
+<PageTitle>Habitats</PageTitle>
+
+<h1>Habitats</h1>
+
+<p>Welcome to the Habitats page!</p>
+
+@if (habitats == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Habitat Name</th>
+                <th>Temperature</th>
+                <th>Food Source</th>
+                <th>Cleanliness</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var habitat in habitats)
+            {
+                @* Alerts Handling and Display Text *@
+                var lowFood = habitat.FoodSource?.Contains("running low");
+                var clean = habitat.IsClean ? "OK" : "Needs cleaning";
+
+                @* Display Habitat Contents *@
+            <tr>
+                <td>@habitat.Name</td>
+                <td>@habitat.Temp</td>
+                <td>
+                    @if (lowFood == true)
+                    {
+                        <span class="oi oi-warning" />
+                    }
+                    @habitat.FoodSource
+                </td>
+                <td>
+                    @if (!habitat.IsClean)
+                    {
+                        <span class="oi oi-warning" />
+                    }
+                    @clean
+                </td>
+                <td>
+                    <a href="@($"habitatdetails/{habitat.Id}")" class="btn btn-primary table-btn">
+                        Detail
+                    </a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}

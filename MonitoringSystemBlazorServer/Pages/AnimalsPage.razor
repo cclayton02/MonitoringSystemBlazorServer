@@ -1,0 +1,60 @@
+﻿@page "/animals"
+
+<PageTitle>Animals</PageTitle>
+
+<h1>Animals</h1>
+
+<p>Welcome to the Animals page!</p>
+
+@if (animals == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Age</th>
+                <th>Health Concerns</th>
+                <th>Feeding Schedule</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var animal in animals)
+            {
+                @* Alerts Handling and Display Text *@
+                var health = String.IsNullOrEmpty(animal.HealthConcerns) ? "none" : animal.HealthConcerns;
+                var food = String.IsNullOrEmpty(animal.FeedingSchedule) ? "none" : animal.FeedingSchedule;
+
+                @* Display Animal Contents *@
+                <tr>
+                    <td>@animal.Name</td>
+                    <td>@animal.Type</td>
+                    <td>@animal.Age</td>
+                    <td>
+                        @if (!health.Equals("none"))
+                        {
+                            <span class="oi oi-warning" />
+                        }
+                        @health
+                    </td>
+                    <td>
+                        @if (food.Equals("none"))
+                        {
+                            <span class="oi oi-warning" />
+                        }@food
+                    </td>
+                    <td>
+                        <a href="@($"animaldetails/{animal.Id}")" class="btn btn-primary table-btn">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

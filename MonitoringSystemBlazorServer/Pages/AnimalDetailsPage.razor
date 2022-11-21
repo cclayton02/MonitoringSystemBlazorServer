@@ -1,0 +1,29 @@
+﻿@page "/animaldetails/{Id}"
+
+@if (animal == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <h1 class="page-title">@animal.Name the @animal.Type</h1>
+    <h3>ID # @animal.Id</h3>
+    <p>
+        <br />
+        <div>
+            <label>Health Concerns:</label>
+            <InputText @bind-Value="animal.HealthConcerns" />
+        </div>
+        <br />
+        <div>
+            <label>Feeding Schedule</label>
+            <InputText @bind-Value="animal.FeedingSchedule" />
+        </div>
+    </p>
+
+    <footer>
+        <a href="/animals" class="btn btn-primary">Cancel</a>
+        <a class="btn btn-primary">Update</a>
+        <button class="btn btn-delete">Delete</button>
+    </footer>
+}

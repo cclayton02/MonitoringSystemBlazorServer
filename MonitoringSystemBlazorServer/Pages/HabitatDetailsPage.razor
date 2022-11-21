@@ -1,0 +1,29 @@
+﻿@page "/habitatdetails/{Id}"
+
+@if (habitat == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <h1 class="page-title">@habitat.Name Habitat</h1>
+    <h3>ID # @habitat.Id</h3>
+    <p>
+        <br />
+        <div>
+            <label>Food Source</label>
+            <InputText @bind-Value="habitat.FoodSource" />
+        </div>
+        <br />
+        <div>
+            <label>Cleanliness</label>
+            <InputCheckbox @bind-Value="habitat.IsClean" />
+        </div>
+    </p>
+
+    <footer>
+        <a href="/habitats" class="btn btn-primary">Cancel</a>
+        <a class="btn btn-primary">Update</a>
+        <button class="btn btn-delete">Delete</button>
+    </footer>
+}
