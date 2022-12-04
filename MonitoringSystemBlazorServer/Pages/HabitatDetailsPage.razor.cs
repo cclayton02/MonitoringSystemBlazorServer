@@ -7,23 +7,22 @@ namespace MonitoringSystemBlazorServer.Pages
 {
     public partial class HabitatDetailsPage
     {
-        [Parameter]
-        public string? Id { get; set; }
-
         [Inject]
         public IHabitatService HabitatService { get; set; }
 
-        private List<Habitat> habitats = new();
+        [Parameter]
+        public string? Id { get; set; }
+
         private Habitat? habitat;
 
         protected async override Task OnInitializedAsync()
         {
-            var habitatId = Int32.Parse(Id);
+            var success = int.TryParse(Id, out var id);
 
-            if (habitatId <= 0)
+            if (success)
             {
                 // Retrieve the habitat using a valid id
-                habitat = await HabitatService.GetHabitatDetails(habitatId);
+                habitat = await HabitatService.GetHabitatDetails(id);
             }
 
             await base.OnInitializedAsync();

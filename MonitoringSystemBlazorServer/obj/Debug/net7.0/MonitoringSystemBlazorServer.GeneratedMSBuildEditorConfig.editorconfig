@@ -20,12 +20,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/Forms/EditAnimalForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Rm9ybXMvRWRpdEFuaW1hbEZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/Forms/EditHabitatForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Rm9ybXMvRWRpdEhhYml0YXRGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/Pages/AnimalDetailsPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQW5pbWFsRGV0YWlsc1BhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/Pages/AnimalsPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQW5pbWFsc1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/Pages/EditAnimalPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdEFuaW1hbFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/Pages/EditHabitatPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdEhhYml0YXRQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/Pages/HabitatDetailsPage.razor]

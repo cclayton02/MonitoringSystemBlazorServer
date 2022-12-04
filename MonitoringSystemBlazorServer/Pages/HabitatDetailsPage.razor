@@ -1,4 +1,4 @@
-﻿@page "/habitatdetails/{Id}"
+﻿@page "/habitats/details/{Id}"
 
 @if (habitat == null)
 {
@@ -11,19 +11,25 @@ else
     <p>
         <br />
         <div>
-            <label>Food Source</label>
-            <InputText @bind-Value="habitat.FoodSource" />
+            <label>Food Source: </label>
+            @habitat.FoodSource
         </div>
         <br />
         <div>
-            <label>Cleanliness</label>
-            <InputCheckbox @bind-Value="habitat.IsClean" />
+            <label>Cleanliness: </label>
+            @if (habitat.IsClean)
+            {
+                <span>Clean</span>
+            }
+            else
+            {
+                <span>Dirty</span>
+            }
         </div>
     </p>
 
     <footer>
-        <a href="/habitats" class="btn btn-primary">Cancel</a>
-        <a class="btn btn-primary">Update</a>
-        <button class="btn btn-delete">Delete</button>
+        <a href="/habitats" class="btn btn-primary">Back</a>
+        <a href="/habitats/edit/@Id" class="btn btn-primary">Edit</a>
     </footer>
 }

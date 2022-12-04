@@ -30,30 +30,31 @@ else
                 var clean = habitat.IsClean ? "OK" : "Needs cleaning";
 
                 @* Display Habitat Contents *@
-            <tr>
-                <td>@habitat.Name</td>
-                <td>@habitat.Temp</td>
-                <td>
-                    @if (lowFood == true)
-                    {
-                        <span class="oi oi-warning" />
-                    }
-                    @habitat.FoodSource
-                </td>
-                <td>
-                    @if (!habitat.IsClean)
-                    {
-                        <span class="oi oi-warning" />
-                    }
-                    @clean
-                </td>
-                <td>
-                    <a href="@($"habitatdetails/{habitat.Id}")" class="btn btn-primary table-btn">
-                        Detail
-                    </a>
-                </td>
-            </tr>
+                <tr>
+                    <td>@habitat.Name</td>
+                    <td>@habitat.Temp</td>
+                    <td>
+                        @if (lowFood == true)
+                        {
+                            <span class="oi oi-warning" />
+                        }
+                        @habitat.FoodSource
+                    </td>
+                    <td>
+                        @if (!habitat.IsClean)
+                        {
+                            <span class="oi oi-warning" />
+                        }
+                        @clean
+                    </td>
+                    <td>
+                        <a href="@($"habitats/details/{habitat.Id}")" class="btn btn-primary table-btn">
+                            Detail
+                        </a>
+                    </td>
+                </tr>
             }
         </tbody>
     </table>
+    <a href="@("habitats/edit/")" class="btn btn-primary table-btn">Add New</a>
 }

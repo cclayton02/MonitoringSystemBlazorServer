@@ -49,7 +49,7 @@ else
                         }@food
                     </td>
                     <td>
-                        <a href="@($"animaldetails/{animal.Id}")" class="btn btn-primary table-btn">
+                        <a href="@($"animals/details/{animal.Id}")" class="btn btn-primary table-btn">
                             Detail
                         </a>
                     </td>
@@ -57,4 +57,5 @@ else
             }
         </tbody>
     </table>
+    <a href="@("animals/edit/")" class="btn btn-primary table-btn">Add New</a>
 }

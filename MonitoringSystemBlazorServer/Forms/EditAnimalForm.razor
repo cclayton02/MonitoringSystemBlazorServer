@@ -1,0 +1,62 @@
+﻿@using MonitoringSystemBlazorShared;
+
+@if (!isSaved)
+{
+    @* Input Fields - Animal *@
+    <EditForm Model="@Animal" OnValidSubmit="@HandleValidSubmit"
+              OnInvalidSubmit="@HandleInvalidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary></ValidationSummary>
+        @* Type *@
+        <div class="form-group row">
+            <label for="animaltype" class="col-sm-3">Animal Type: </label>
+            <InputSelect id="animaltype" class="form-control col-sm-8" @bind-Value=@Animal.Type>
+                <option value="@(AnimalType.Bear)">Bear</option>
+                <option value="@(AnimalType.Giraffe)">Giraffe</option>
+                <option value="@(AnimalType.Lion)">Lion</option>
+                <option value="@(AnimalType.Tiger)">Tiger</option>
+            </InputSelect>
+        </div>
+
+        @* Name *@
+        <div class="form-group row">
+            <label for="name" class="col-sm-3">Name: </label>
+            <InputText id="name" class="form-control col-sm-8" @bind-Value="@Animal.Name" placeholder="Enter a name" />
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Animal.Name)" />
+        </div>
+
+        @* Age *@
+        <div class="form-group row">
+            <label for="age" class="col-sm-3">Age: </label>
+            <InputNumber id="age" class="form-control col-sm-8" @bind-Value="@Animal.Age" placeholder="Enter age" />
+        </div>
+
+        @* Health Concerns *@
+        <div class="form-group row">
+            <label for="healthConcerns" class="col-sm-3">Health Concerns: </label>
+            <InputText id="healthConcerns" class="form-control col-sm-8" @bind-Value="@Animal.HealthConcerns" placeholder="Enter health concerns, if any" />
+            <ValidationMessage class="form-control col-sm-8" For="@(() => Animal.HealthConcerns)" />
+        </div>
+
+        @* Feeding Schedule *@
+        <div class="form-group row">
+            <label for="feedingSchedule" class="col-sm-3">Feeding Schedule: </label>
+            <InputText id="feedingSchedule" class="form-control col-sm-8" @bind-Value="@Animal.FeedingSchedule" placeholder="Enter feeding schedule, if any" />
+        </div>
+
+        <br/>
+        <button type="submit" class="btn btn-primary edit-btn">Save</button>
+
+        @if (Animal.Id > 0)
+        {
+            <a class="btn btn-danger" @onclick="@DeleteAnimal">Delete</a>
+        }    
+    </EditForm>
+}
+else
+{
+    @* Display an alert message if we are unable to save *@
+    <div class="alert @status">@alertMessage</div>
+}
+<br/>
+<a class="btn btn-outline-primary" @onclick="@NavigateToAnimals">Go back</a>

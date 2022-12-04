@@ -1,0 +1,27 @@
+﻿@page "/habitats/edit"
+@page "/habitats/edit/{Id}"
+
+@using MonitoringSystemBlazorShared
+@using MonitoringSystemBlazorServer.Forms
+
+@if (habitat == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <section class="habitat-edit">
+        @if (habitat.Id != 0)
+        {
+            <h1 class="page-title">Details for @habitat.Name</h1>
+
+        }
+        else
+        {
+            <h1 class="page-title">Add New Habitat</h1>
+        }
+
+        @*Use form for editing habitats*@
+        <EditHabitatForm Habitat="habitat" />
+    </section>
+}

@@ -1,0 +1,27 @@
+﻿@page "/animals/edit"
+@page "/animals/edit/{Id}"
+
+@using MonitoringSystemBlazorShared
+@using MonitoringSystemBlazorServer.Forms
+
+@if (animal == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <section class="animal-edit">
+        @if (animal.Id != 0)
+        {
+            <h1 class="page-title">Details for @animal.Name - @animal.Type</h1>
+
+        }
+        else
+        {
+            <h1 class="page-title">Add New Animal</h1>
+        }
+
+        @*Use form for editing animals*@
+        <EditAnimalForm Animal="animal" />
+    </section>
+}

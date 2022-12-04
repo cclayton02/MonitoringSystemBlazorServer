@@ -1,4 +1,4 @@
-﻿@page "/animaldetails/{Id}"
+﻿@page "/animals/details/{Id}"
 
 @if (animal == null)
 {
@@ -11,19 +11,23 @@ else
     <p>
         <br />
         <div>
+            <label>Age:</label>
+            @animal.Age
+        </div>
+        <br />
+        <div>
             <label>Health Concerns:</label>
-            <InputText @bind-Value="animal.HealthConcerns" />
+            @animal.HealthConcerns
         </div>
         <br />
         <div>
             <label>Feeding Schedule</label>
-            <InputText @bind-Value="animal.FeedingSchedule" />
+            @animal.FeedingSchedule
         </div>
     </p>
 
     <footer>
-        <a href="/animals" class="btn btn-primary">Cancel</a>
-        <a class="btn btn-primary">Update</a>
-        <button class="btn btn-delete">Delete</button>
+        <a href="/animals" class="btn btn-primary">Back</a>
+        <a href="/animals/edit/@Id" class="btn btn-primary">Edit</a>
     </footer>
 }

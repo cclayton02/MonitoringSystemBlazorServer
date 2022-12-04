@@ -7,23 +7,22 @@ namespace MonitoringSystemBlazorServer.Pages
 {
     public partial class AnimalDetailsPage
     {
-        [Parameter]
-        public string? Id { get; set; }
-
         [Inject]
         public IAnimalService AnimalService { get; set; }
 
-        private List<Animal> animals = new();
+        [Parameter]
+        public string? Id { get; set; }
+
         private Animal? animal;
 
         protected async override Task OnInitializedAsync()
         {
-            var animalId = Int32.Parse(Id);
+            var success = int.TryParse(Id, out var id);
 
-            if (animalId <= 0)
+            if (success)
             {
                 // Retrieve the animal using a valid id
-                animal = await AnimalService.GetAnimalDetails(animalId);
+                animal = await AnimalService.GetAnimalDetails(id);
             }
 
             await base.OnInitializedAsync();
