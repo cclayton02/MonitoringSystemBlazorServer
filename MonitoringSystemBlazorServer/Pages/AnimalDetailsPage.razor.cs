@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Components;
-using MonitoringSystemBlazorServer.Data;
+using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServer.Pages
 {
@@ -24,4 +24,3 @@ namespace MonitoringSystemBlazorServer.Pages
         }
     }
 }
-

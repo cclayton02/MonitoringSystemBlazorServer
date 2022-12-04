@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MonitoringSystemBlazorServer.Data
+namespace MonitoringSystemBlazorShared
 {
 	/// <summary>
 	/// An object representing a specific animal in the zoo
@@ -22,7 +22,7 @@ namespace MonitoringSystemBlazorServer.Data
 		/// <summary>
 		/// The approximate age of the animal, in years
 		/// </summary>
-        public int? Age { get; set; }
+        public int Age { get; set; }
 		/// <summary>
 		/// A note to indicate any health concerns to the zookeper
 		/// </summary>
@@ -31,25 +31,6 @@ namespace MonitoringSystemBlazorServer.Data
 		/// A note to outline when the Animal should be fed
 		/// </summary>
 		public string? FeedingSchedule { get; set; }
-
-        public Animal()
-        {
-        }
-
-        public Animal(AnimalType type, string name)
-		{
-			Type = type;
-			Name = name;
-		}
-
-		public Animal(Animal other)
-		{
-			Type = other.Type;
-			Name = other.Name;
-			Age = other.Age;
-			HealthConcerns = other.HealthConcerns;
-			FeedingSchedule = other.FeedingSchedule;
-		}
     }
 }
 

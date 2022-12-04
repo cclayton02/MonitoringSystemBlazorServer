@@ -1,4 +1,4 @@
-﻿namespace MonitoringSystemBlazorServer.Data
+﻿namespace MonitoringSystemBlazorShared
 {
     /// <summary>
     /// An list of the different levels of climate for the Zoos' Habitats

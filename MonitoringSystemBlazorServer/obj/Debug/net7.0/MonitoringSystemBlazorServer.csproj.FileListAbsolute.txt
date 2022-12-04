@@ -30,3 +30,6 @@
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/obj/Debug/net7.0/MonitoringSystemBlazorServer.pdb
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/obj/Debug/net7.0/MonitoringSystemBlazorServer.genruntimeconfig.cache
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/obj/Debug/net7.0/ref/MonitoringSystemBlazorServer.dll
+/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/bin/Debug/net7.0/MonitoringSystemBlazorShared.dll
+/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/bin/Debug/net7.0/MonitoringSystemBlazorShared.pdb
+/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/obj/Debug/net7.0/MonitoringSystemBlazorServer.csproj.CopyComplete

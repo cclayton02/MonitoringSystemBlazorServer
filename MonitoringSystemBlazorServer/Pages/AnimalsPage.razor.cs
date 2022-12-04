@@ -1,5 +1,5 @@
 ﻿using System;
-using MonitoringSystemBlazorServer.Data;
+using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServer.Pages
 {

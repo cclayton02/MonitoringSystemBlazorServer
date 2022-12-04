@@ -4,14 +4,97 @@
     "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/MonitoringSystemBlazorServerTest.csproj": {}
   },
   "projects": {
-    "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer.csproj": {
+    "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/MonitoringSystemBlazorServerTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer.csproj",
-        "projectName": "MonitoringSystemBlazorServer",
-        "projectPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer.csproj",
+        "projectUniqueName": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/MonitoringSystemBlazorServerTest.csproj",
+        "projectName": "MonitoringSystemBlazorServerTest",
+        "projectPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/MonitoringSystemBlazorServerTest.csproj",
         "packagesPath": "/Users/charlieclayton/.nuget/packages/",
-        "outputPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/obj/",
+        "outputPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/charlieclayton/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj": {
+                "projectPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.4.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj",
+        "projectName": "MonitoringSystemBlazorShared",
+        "projectPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj",
+        "packagesPath": "/Users/charlieclayton/.nuget/packages/",
+        "outputPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorShared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/charlieclayton/.nuget/NuGet/NuGet.Config"
@@ -37,88 +120,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/MonitoringSystemBlazorServerTest.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/MonitoringSystemBlazorServerTest.csproj",
-        "projectName": "MonitoringSystemBlazorServerTest",
-        "projectPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/MonitoringSystemBlazorServerTest.csproj",
-        "packagesPath": "/Users/charlieclayton/.nuget/packages/",
-        "outputPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/charlieclayton/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer.csproj": {
-                "projectPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer/MonitoringSystemBlazorServer.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.3.2, )"
-            },
-            "NUnit": {
-              "target": "Package",
-              "version": "[3.13.3, )"
-            },
-            "NUnit.Analyzers": {
-              "target": "Package",
-              "version": "[3.3.0, )"
-            },
-            "NUnit3TestAdapter": {
-              "target": "Package",
-              "version": "[4.2.1, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[3.1.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

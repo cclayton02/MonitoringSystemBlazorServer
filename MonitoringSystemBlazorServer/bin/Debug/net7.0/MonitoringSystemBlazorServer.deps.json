@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "MonitoringSystemBlazorServer/1.0.0": {
+        "dependencies": {
+          "MonitoringSystemBlazorShared": "1.0.0"
+        },
         "runtime": {
           "MonitoringSystemBlazorServer.dll": {}
+        }
+      },
+      "MonitoringSystemBlazorShared/1.0.0": {
+        "runtime": {
+          "MonitoringSystemBlazorShared.dll": {}
         }
       }
     }
   },
   "libraries": {
     "MonitoringSystemBlazorServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MonitoringSystemBlazorShared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

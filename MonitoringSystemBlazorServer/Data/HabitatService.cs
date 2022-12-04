@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MonitoringSystemBlazorServer.Data
+namespace MonitoringSystemBlazorShared
 {
 	public class HabitatService
 	{

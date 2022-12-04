@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using MonitoringSystemBlazorServer.Data;
+using MonitoringSystemBlazorShared;
 
 var builder = WebApplication.CreateBuilder(args);
 

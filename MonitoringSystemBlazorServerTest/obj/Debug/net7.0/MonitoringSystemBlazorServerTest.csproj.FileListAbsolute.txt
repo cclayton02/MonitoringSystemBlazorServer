@@ -1,10 +1,4 @@
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/CoverletSourceRootsMapping
-/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/MonitoringSystemBlazorServer.deps.json
-/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/MonitoringSystemBlazorServer.runtimeconfig.json
-/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/appsettings.Development.json
-/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/appsettings.json
-/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/MonitoringSystemBlazorServer.staticwebassets.runtime.json
-/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/MonitoringSystemBlazorServer
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/NUnit3.TestAdapter.dll
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/NUnit3.TestAdapter.pdb
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/nunit.engine.dll
@@ -92,8 +86,6 @@
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/MonitoringSystemBlazorServer.dll
-/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/MonitoringSystemBlazorServer.pdb
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/obj/Debug/net7.0/MonitoringSystemBlazorServerTest.csproj.AssemblyReference.cache
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/obj/Debug/net7.0/MonitoringSystemBlazorServerTest.GeneratedMSBuildEditorConfig.editorconfig
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/obj/Debug/net7.0/MonitoringSystemBlazorServerTest.AssemblyInfoInputs.cache
@@ -105,3 +97,5 @@
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/obj/Debug/net7.0/MonitoringSystemBlazorServerTest.pdb
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/obj/Debug/net7.0/MonitoringSystemBlazorServerTest.genruntimeconfig.cache
 /Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/obj/Debug/net7.0/ref/MonitoringSystemBlazorServerTest.dll
+/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/MonitoringSystemBlazorShared.dll
+/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorServerTest/bin/Debug/net7.0/MonitoringSystemBlazorShared.pdb

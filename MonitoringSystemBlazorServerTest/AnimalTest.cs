@@ -1,4 +1,4 @@
-using MonitoringSystemBlazorServer.Data;
+using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServerTest
 {

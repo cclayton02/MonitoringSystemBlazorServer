@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "MonitoringSystemBlazorShared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MonitoringSystemBlazorShared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MonitoringSystemBlazorShared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MonitoringSystemBlazorShared/1.0.0": {
+      "type": "project",
+      "path": "../MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj",
+      "msbuildProject": "../MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "MonitoringSystemBlazorShared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/charlieclayton/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj": {
+              "projectPath": "/Users/charlieclayton/Projects/MonitoringSystemBlazorServer/MonitoringSystemBlazorShared/MonitoringSystemBlazorShared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MonitoringSystemBlazorServer.Data
+namespace MonitoringSystemBlazorShared
 {
 	/// <summary>
 	/// A naturalistic environment used to house a grouping of Animals
@@ -27,27 +27,6 @@ namespace MonitoringSystemBlazorServer.Data
 		/// A flag to note if the Habitat needs cleaning
 		/// </summary>
 		public bool IsClean { get; set; }
-
-        public Habitat()
-        {
-        }
-
-        public Habitat(string name, Temperature temp)
-		{
-			Name = name;
-			Temp = temp;
-			FoodSource = string.Empty;
-			IsClean = true;
-		}
-
-		public Habitat(Habitat other)
-		{
-			Name = other.Name;
-			Temp = other.Temp;
-			FoodSource = other.FoodSource;
-			IsClean = other.IsClean;
-		}
-
     }
 }
 
