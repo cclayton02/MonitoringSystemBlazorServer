@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Components;
+using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServer.Pages
@@ -9,19 +10,23 @@ namespace MonitoringSystemBlazorServer.Pages
         [Parameter]
         public string? Id { get; set; }
 
+        [Inject]
+        public IHabitatService HabitatService { get; set; }
+
         private List<Habitat> habitats = new();
         private Habitat? habitat;
-        private HabitatService habitatService = new();
 
-        protected override Task OnInitializedAsync()
+        protected async override Task OnInitializedAsync()
         {
-            if (!string.IsNullOrEmpty(Id))
+            var habitatId = Int32.Parse(Id);
+
+            if (habitatId <= 0)
             {
-                habitat = habitatService.Get(Int32.Parse(Id));
+                // Retrieve the habitat using a valid id
+                habitat = await HabitatService.GetHabitatDetails(habitatId);
             }
 
-            return base.OnInitializedAsync();
+            await base.OnInitializedAsync();
         }
     }
 }
-

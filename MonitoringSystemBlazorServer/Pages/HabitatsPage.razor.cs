@@ -1,32 +1,23 @@
 ﻿using System;
+using Microsoft.AspNetCore.Components;
+using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServer.Pages
 {
-	public partial class HabitatsPage
-	{
-        HabitatService habitatService = new();
-        List<Habitat> habitats = new();
+    public partial class HabitatsPage
+    {
+        [Inject]
+        public IHabitatService HabitatService { get; set; }
 
-        private void InitializeHabitats()
+        public IEnumerable<Habitat> habitats;
+
+        protected override async Task OnInitializedAsync()
         {
             // Retrieve our list of habitats from the service
-            habitats = habitatService.GetAll();
-        }
+            habitats = await HabitatService.GetAllHabitats();
 
-        private void OnHabitatRemoved(Habitat item)
-        {
-            habitatService.Delete(item.Id);
-
-            // Refresh the list after removal, or return nothing if empty
-            habitats = habitatService.GetAll() ?? new();
-        }
-
-        protected override Task OnInitializedAsync()
-        {
-            InitializeHabitats();
-
-            return base.OnInitializedAsync();
+            await base.OnInitializedAsync();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,8 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<AnimalService>();
-builder.Services.AddSingleton<HabitatService>();
+builder.Services.AddHttpClient<IAnimalService, AnimalService>(client => client.BaseAddress = new Uri("https://localhost:7228/"));
+builder.Services.AddHttpClient<IHabitatService, HabitatService>(client => client.BaseAddress = new Uri("https://localhost:7228/"));
 
 var app = builder.Build();
 

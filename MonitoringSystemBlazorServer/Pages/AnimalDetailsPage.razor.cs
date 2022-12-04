@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Components;
+using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServer.Pages
@@ -9,18 +10,23 @@ namespace MonitoringSystemBlazorServer.Pages
         [Parameter]
         public string? Id { get; set; }
 
+        [Inject]
+        public IAnimalService AnimalService { get; set; }
+
         private List<Animal> animals = new();
         private Animal? animal;
-        private AnimalService animalService = new();
 
-        protected override Task OnInitializedAsync()
+        protected async override Task OnInitializedAsync()
         {
-            if (!string.IsNullOrEmpty(Id))
+            var animalId = Int32.Parse(Id);
+
+            if (animalId <= 0)
             {
-                animal = animalService.Get(Int32.Parse(Id));
+                // Retrieve the animal using a valid id
+                animal = await AnimalService.GetAnimalDetails(animalId);
             }
 
-            return base.OnInitializedAsync();
+            await base.OnInitializedAsync();
         }
     }
 }

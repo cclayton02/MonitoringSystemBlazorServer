@@ -1,32 +1,23 @@
 ﻿using System;
+using Microsoft.AspNetCore.Components;
+using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServer.Pages
 {
 	public partial class AnimalsPage
 	{
-        AnimalService animalService = new();
-        List<Animal> animals = new();
+        [Inject]
+        public IAnimalService AnimalService { get; set; }
 
-        private void InitializeAnimals()
+        public IEnumerable<Animal> animals;
+
+        protected override async Task OnInitializedAsync()
         {
             // Retrieve our list of animals from the service
-            animals = animalService.GetAll();
-        }
+            animals = await AnimalService.GetAllAnimals();
 
-        private void OnAnimalRemoved(Animal item)
-        {
-            animalService.Delete(item.Id);
-
-            // Refresh the list after removal, or return nothing if empty
-            animals = animalService.GetAll() ?? new();
-        }
-
-        protected override Task OnInitializedAsync()
-        {
-            InitializeAnimals();
-
-            return base.OnInitializedAsync();
+            await base.OnInitializedAsync();
         }
     }
 }
