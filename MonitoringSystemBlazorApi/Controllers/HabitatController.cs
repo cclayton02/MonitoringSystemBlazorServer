@@ -4,6 +4,8 @@ using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorApi.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class HabitatController : Controller
     {
         private readonly IHabitatRepository _habitatRepository;

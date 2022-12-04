@@ -4,6 +4,8 @@ using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorApi.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class AnimalController : Controller
     {
         private readonly IAnimalRepository _animalRepository;
