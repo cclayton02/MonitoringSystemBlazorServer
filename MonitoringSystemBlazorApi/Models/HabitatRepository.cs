@@ -13,16 +13,19 @@ namespace MonitoringSystemBlazorApi.Models
             _appDbContext = appDbContext;
         }
 
+        /// <inheritdoc/>
         public IEnumerable<Habitat> GetAllHabitats()
         {
             return _appDbContext.Habitats;
         }
 
+        /// <inheritdoc/>
         public Habitat GetHabitatById(int habitatId)
         {
             return _appDbContext.Habitats.FirstOrDefault(c => c.Id == habitatId);
         }
 
+        /// <inheritdoc/>
         public Habitat AddHabitat(Habitat habitat)
         {
             var addedEntity = _appDbContext.Habitats.Add(habitat);
@@ -30,6 +33,7 @@ namespace MonitoringSystemBlazorApi.Models
             return addedEntity.Entity;
         }
 
+        /// <inheritdoc/>
         public Habitat UpdateHabitat(Habitat habitat)
         {
             var foundHabitat = _appDbContext.Habitats.FirstOrDefault(e => e.Id == habitat.Id);
@@ -49,6 +53,7 @@ namespace MonitoringSystemBlazorApi.Models
             return null;
         }
 
+        /// <inheritdoc/>
         public void DeleteHabitat(int habitatId)
         {
             var foundHabitat = _appDbContext.Habitats.FirstOrDefault(e => e.Id == habitatId);

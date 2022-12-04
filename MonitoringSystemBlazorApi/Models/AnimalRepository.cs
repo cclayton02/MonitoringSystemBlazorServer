@@ -13,16 +13,19 @@ namespace MonitoringSystemBlazorApi.Models
             _appDbContext = appDbContext;
         }
 
+        /// <inheritdoc/>
         public IEnumerable<Animal> GetAllAnimals()
         {
             return _appDbContext.Animals;
         }
 
+        /// <inheritdoc/>
         public Animal GetAnimalById(int animalId)
         {
             return _appDbContext.Animals.FirstOrDefault(c => c.Id == animalId);
         }
 
+        /// <inheritdoc/>
         public Animal AddAnimal(Animal animal)
         {
             var addedEntity = _appDbContext.Animals.Add(animal);
@@ -30,6 +33,7 @@ namespace MonitoringSystemBlazorApi.Models
             return addedEntity.Entity;
         }
 
+        /// <inheritdoc/>
         public Animal UpdateAnimal(Animal animal)
         {
             var foundAnimal = _appDbContext.Animals.FirstOrDefault(e => e.Id == animal.Id);
@@ -50,6 +54,7 @@ namespace MonitoringSystemBlazorApi.Models
             return null;
         }
 
+        /// <inheritdoc/>
         public void DeleteAnimal(int animalId)
         {
             var foundAnimal = _appDbContext.Animals.FirstOrDefault(e => e.Id == animalId);
