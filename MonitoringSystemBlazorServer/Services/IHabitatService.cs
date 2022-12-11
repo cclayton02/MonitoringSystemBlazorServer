@@ -1,4 +1,8 @@
-﻿using MonitoringSystemBlazorShared;
+﻿// Name: IHabitatService.cs
+// Author: Charles Clayton
+// Description: Interface that performs client CRUD operations on Habitat table
+
+using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServer.Services
 {

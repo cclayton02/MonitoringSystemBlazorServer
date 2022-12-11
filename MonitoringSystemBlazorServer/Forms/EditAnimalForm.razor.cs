@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: EditAnimalForm.razor.cs
+// Author: Charles Clayton
+// Description: Web form for creating/editing an animal
+
+using System;
 using Microsoft.AspNetCore.Components;
 using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;

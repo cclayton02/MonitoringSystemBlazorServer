@@ -1,59 +1,64 @@
-﻿@using MonitoringSystemBlazorShared;
+﻿@*
+    Name: EditHabitatForm.razor
+    Author: Charles Clayton
+    Description: Web form for creating/editing a habitat
+*@
+@using MonitoringSystemBlazorShared;
 
 @if (!isSaved)
 {
     @* Input Fields - Habitat *@
-<EditForm Model="@Habitat" OnValidSubmit="@HandleValidSubmit"
-          OnInvalidSubmit="@HandleInvalidSubmit">
-    <DataAnnotationsValidator />
-    <ValidationSummary></ValidationSummary>
-    @* Name *@
-    <div class="form-group row">
-        <label for="name" class="col-sm-3">Name: </label>
-        <InputText id="name" class="form-control col-sm-8" @bind-Value="@Habitat.Name" placeholder="Enter a name" />
-        <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Habitat.Name)" />
-    </div>
+    <EditForm Model="@Habitat" OnValidSubmit="@HandleValidSubmit"
+              OnInvalidSubmit="@HandleInvalidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary></ValidationSummary>
+        @* Name *@
+        <div class="form-group row">
+            <label for="name" class="col-sm-3">Name: </label>
+            <InputText id="name" class="form-control col-sm-8" @bind-Value="@Habitat.Name" placeholder="Enter a name" />
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Habitat.Name)" />
+        </div>
 
-    @* Temperature *@
-    <div class="form-group row">
-        <label for="habitattype" class="col-sm-3">Habitat Type: </label>
-        <InputSelect id="habitattype" class="form-control col-sm-8" @bind-Value=@Habitat.Temp>
-            <option value="@(Temperature.Varied)">Varied</option>
-            <option value="@(Temperature.Freezing)">Freezing</option>
-            <option value="@(Temperature.Cold)">Cold</option>
-            <option value="@(Temperature.Moderate)">Moderate</option>
-            <option value="@(Temperature.Warm)">Warm</option>
-            <option value="@(Temperature.Hot)">Hot</option>
-        </InputSelect>
-    </div>
+        @* Temperature *@
+        <div class="form-group row">
+            <label for="habitattype" class="col-sm-3">Habitat Type: </label>
+            <InputSelect id="habitattype" class="form-control col-sm-8" @bind-Value=@Habitat.Temp>
+                <option value="@(Temperature.Varied)">Varied</option>
+                <option value="@(Temperature.Freezing)">Freezing</option>
+                <option value="@(Temperature.Cold)">Cold</option>
+                <option value="@(Temperature.Moderate)">Moderate</option>
+                <option value="@(Temperature.Warm)">Warm</option>
+                <option value="@(Temperature.Hot)">Hot</option>
+            </InputSelect>
+        </div>
 
-    @* Food Source *@
-    <div class="form-group row">
-        <label for="foodSource" class="col-sm-3">Food Source: </label>
-        <InputText id="foodSource" class="form-control col-sm-8" @bind-Value="@Habitat.FoodSource" placeholder="Enter food source, if any" />
-    </div>
+        @* Food Source *@
+        <div class="form-group row">
+            <label for="foodSource" class="col-sm-3">Food Source: </label>
+            <InputText id="foodSource" class="form-control col-sm-8" @bind-Value="@Habitat.FoodSource" placeholder="Enter food source, if any" />
+        </div>
 
-    @* Cleanliness *@
-    <div class="form-group row">
-        <label for="cleanliness">
-            <InputCheckbox id="cleanliness" @bind-Value="@Habitat.IsClean"></InputCheckbox>
-            &nbsp;Is Clean?
-        </label>
-    </div>
+        @* Cleanliness *@
+        <div class="form-group row">
+            <label for="cleanliness">
+                <InputCheckbox id="cleanliness" @bind-Value="@Habitat.IsClean"></InputCheckbox>
+                &nbsp;Is Clean?
+            </label>
+        </div>
 
-    <br />
-    <button type="submit" class="btn btn-primary edit-btn">Save</button>
+        <br />
+        <button type="submit" class="btn btn-primary edit-btn">Save</button>
 
-    @if (Habitat.Id > 0)
-    {
-        <a class="btn btn-danger" @onclick="@DeleteHabitat">Delete</a>
-    }
-</EditForm>
+        @if (Habitat.Id > 0)
+        {
+            <a class="btn btn-danger" @onclick="@DeleteHabitat">Delete</a>
+        }
+    </EditForm>
 }
 else
 {
     @* Display an alert message if we are unable to save *@
     <div class="alert @status">@alertMessage</div>
 }
-<br/>
+<br />
 <a class="btn btn-outline-primary" @onclick="@NavigateToHabitats">Go back</a>

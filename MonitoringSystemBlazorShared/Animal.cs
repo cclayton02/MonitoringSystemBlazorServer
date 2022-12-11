@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: Animal.cs
+// Author: Charles Clayton
+// Description: Shared model for an Animal ojbect
+
+using System;
 
 namespace MonitoringSystemBlazorShared
 {

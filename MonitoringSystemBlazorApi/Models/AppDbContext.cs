@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: AppDbContext.cs
+// Author: Charles Clayton
+// Description: Establishes and seeds database model including tables 
+
+using System;
 using Microsoft.EntityFrameworkCore;
 using MonitoringSystemBlazorShared;
 

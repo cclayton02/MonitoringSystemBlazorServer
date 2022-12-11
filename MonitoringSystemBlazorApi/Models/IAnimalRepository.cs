@@ -1,4 +1,8 @@
-﻿using MonitoringSystemBlazorShared;
+﻿// Name: IAnimalRepository.cs
+// Author: Charles Clayton
+// Description: Animal CRUD interface that interacts with API's DB sets
+
+using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorApi.Models
 {

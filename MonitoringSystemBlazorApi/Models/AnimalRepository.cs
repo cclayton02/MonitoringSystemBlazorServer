@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: AnimalRepository.cs
+// Author: Charles Clayton
+// Description: Animal CRUD model that interacts with API's DB sets
+
+using System;
 using System.Linq;
 using MonitoringSystemBlazorShared;
 

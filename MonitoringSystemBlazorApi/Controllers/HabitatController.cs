@@ -1,4 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// Name: HabitatController.cs
+// Author: Charles Clayton
+// Description: REST API calls for Habitat CRUD operations
+// Reference: https://docs.github.com/en/rest?apiVersion=2022-11-28
+
+using Microsoft.AspNetCore.Mvc;
 using MonitoringSystemBlazorApi.Models;
 using MonitoringSystemBlazorShared;
 

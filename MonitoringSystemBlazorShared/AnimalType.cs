@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: AnimalType.cs
+// Author: Charles Clayton
+// Description: List of types of Animals in the zoo
+
+using System;
 
 namespace MonitoringSystemBlazorShared
 {

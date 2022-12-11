@@ -1,4 +1,8 @@
-﻿using MonitoringSystemBlazorShared;
+﻿// Name: IAnimalService.cs
+// Author: Charles Clayton
+// Description: Interface that performs client CRUD operations on Animal table
+
+using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServer.Services
 {

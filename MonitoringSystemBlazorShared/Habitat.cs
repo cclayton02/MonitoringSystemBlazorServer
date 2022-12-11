@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: Habitat.cs
+// Author: Charles Clayton
+// Description: Shared model for a Habitat ojbect
+
+using System;
 
 namespace MonitoringSystemBlazorShared
 {

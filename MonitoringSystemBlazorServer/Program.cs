@@ -1,16 +1,17 @@
-﻿using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
-using MonitoringSystemBlazorServer.Services;
-using MonitoringSystemBlazorShared;
+﻿using MonitoringSystemBlazorServer.Services;
 
+// Initialize application container
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+// Add Animal Service to container
 builder.Services.AddHttpClient<IAnimalService, AnimalService>(client => client.BaseAddress = new Uri("https://localhost:7228/"));
+// Add Habitat Service to container
 builder.Services.AddHttpClient<IHabitatService, HabitatService>(client => client.BaseAddress = new Uri("https://localhost:7228/"));
 
+// Build application
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

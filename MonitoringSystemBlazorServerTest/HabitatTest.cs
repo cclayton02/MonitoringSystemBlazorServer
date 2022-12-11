@@ -1,3 +1,7 @@
+// Name: HabitatTest.cs
+// Author: Charles Clayton
+// Description: Unit tests for Habitat class
+
 using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServerTest

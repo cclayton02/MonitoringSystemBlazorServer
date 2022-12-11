@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: HabitatsPage.razor.cs
+// Author: Charles Clayton
+// Description: Logic for the habitats section of website
+
+using System;
 using Microsoft.AspNetCore.Components;
 using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;

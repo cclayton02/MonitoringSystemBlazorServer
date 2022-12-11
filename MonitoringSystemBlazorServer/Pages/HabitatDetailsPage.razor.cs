@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: HabitatDetailsPage.razor.cs
+// Author: Charles Clayton
+// Description: Gets specific details for a single habitat
+
+using System;
 using Microsoft.AspNetCore.Components;
 using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;

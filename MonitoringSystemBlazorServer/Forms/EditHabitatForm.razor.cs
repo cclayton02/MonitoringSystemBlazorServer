@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: EditHabitatForm.razor.cs
+// Author: Charles Clayton
+// Description: Web page for creating/editing a habitat
+
+using System;
 using Microsoft.AspNetCore.Components;
 using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;

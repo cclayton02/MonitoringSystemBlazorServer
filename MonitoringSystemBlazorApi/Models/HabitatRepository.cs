@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: HabitatRepository.cs
+// Author: Charles Clayton
+// Description: Habitat CRUD model that interacts with API's DB sets
+
+using System;
 using System.Linq;
 using MonitoringSystemBlazorShared;
 

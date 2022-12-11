@@ -1,3 +1,7 @@
+// Name: AnimalTest.cs
+// Author: Charles Clayton
+// Description: Unit tests for Animal class
+
 using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorServerTest

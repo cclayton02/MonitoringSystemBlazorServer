@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: EditAnimalPage.razor.cs
+// Author: Charles Clayton
+// Description: Creates a form model of the selected/new animal
+
+using System;
 using Microsoft.AspNetCore.Components;
 using MonitoringSystemBlazorServer.Services;
 using MonitoringSystemBlazorShared;

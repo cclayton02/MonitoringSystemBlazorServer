@@ -1,4 +1,8 @@
-﻿using MonitoringSystemBlazorShared;
+﻿// Name: IHabitatRepository.cs
+// Author: Charles Clayton
+// Description: Habitat CRUD interface that interacts with API's DB sets
+
+using MonitoringSystemBlazorShared;
 
 namespace MonitoringSystemBlazorApi.Models
 {

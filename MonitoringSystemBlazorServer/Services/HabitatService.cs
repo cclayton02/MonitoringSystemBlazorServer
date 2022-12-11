@@ -1,4 +1,8 @@
-﻿using System;
+﻿// Name: HabitatService.cs
+// Author: Charles Clayton
+// Description: Class that performs client CRUD operations on Habitat table
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
